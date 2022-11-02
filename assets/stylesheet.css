@@ -1,0 +1,61 @@
+body{
+
+}
+
+
+
+.header{
+    background-color: rgb(117, 211, 203);
+    color: black;
+    display:flex;
+    height: 100px;
+    position:relative;
+    justify-content: space-between;
+}
+
+
+nav{
+    display: block;
+    justify-content: flex-end;
+    background-color: rgb(125, 127, 134);
+    height:fit-content;
+    
+    
+    
+}
+
+nav h1{
+    color:white;
+}
+
+nav a {
+    color: black;
+    position: relative; 
+    
+}
+
+.first-project-card{
+    display:flex;
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(125, 127, 134);
+}
+
+.second-project-card{
+    display:flex;
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(125, 127, 134);
+
+}
+
+.card-parent{
+    display:flex;
+    flex-wrap: wrap;
+    flex:2;
+    justify-content: space-evenly;
+    padding:20px;
+    background-color: goldenrod;
+}
