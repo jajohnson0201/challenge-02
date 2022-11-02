@@ -1,11 +1,13 @@
-body{
-
+:root{
+ --color-grey: rgb(125, 127, 134);
+ --color-lightblue: rgb(117, 211, 203);
+ --color-goldenrod: goldenrod;
 }
 
 
 
 .header{
-    background-color: rgb(117, 211, 203);
+    background-color: var(--color-lightblue);
     color: black;
     display:flex;
     height: 100px;
@@ -15,9 +17,9 @@ body{
 
 
 nav{
-    display: block;
+    display: flex;
     justify-content: flex-end;
-    background-color: rgb(125, 127, 134);
+    background-color: var(--color-grey);
     height:fit-content;
     
     
@@ -34,28 +36,55 @@ nav a {
     
 }
 
-.first-project-card{
-    display:flex;
-    display: inline-block;
-    width: 25%;
-    padding: 20px;
-    background-color: rgb(125, 127, 134);
+.projects-header{
+    background-color: var(--color-goldenrod);
+    padding: 10px;
+    margin: 0;
+    border-color: var(--color-lightblue);
+    border-style: solid;
+    text-align: center;
 }
 
-.second-project-card{
-    display:flex;
-    display: inline-block;
-    width: 25%;
-    padding: 20px;
-    background-color: rgb(125, 127, 134);
-
+.card{
+    
+    width: 200px;
+    height: 300px;
+    padding: 5%;
+    background-color: var(--color-grey);
+    border-radius:25%;
+    margin:10px;
 }
+
 
 .card-parent{
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
+    display: flexbox;
     flex:2;
     justify-content: space-evenly;
-    padding:20px;
-    background-color: goldenrod;
+    padding:10%;
+    background-color: var(--color-goldenrod);
+    align-items: flex-start;
+}
+
+.card-header{
+    border-color: var(--color-lightblue);
+    border-style: solid;
+    padding: 10%;
+    border-radius:25%;
+    margin-bottom: 90%;
+}
+
+.card-p{
+    display: inline-block;
+    text-align:center;
+    margin-top:0px;
+    background-color: whitesmoke;
+}
+
+.card img{
+    flex:2;
+    max-width: 300px;
+    align-items: center;
+    margin-top: 0px;
 }
