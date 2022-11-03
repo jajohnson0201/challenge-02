@@ -1,5 +1,5 @@
 # challenge-02
-
+![project02screenshot](https://user-images.githubusercontent.com/115191212/199853204-6d0af5c0-2280-491d-8775-7ad36cbb966e.jpg)
 ## Link
 
 ## Description
