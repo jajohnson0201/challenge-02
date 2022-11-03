@@ -42,6 +42,12 @@ nav a {
     min-width: 15%;
 }
 
+.about-me{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .projects-header{
     background-color: var(--color-goldenrod);
     padding: 5%;
@@ -111,8 +117,15 @@ nav a {
 
 }
 
+
+
 footer{
     display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: var(--color-lightblue);
+    border-style:solid;
+    border-color:var(--color-black);
 }
 
 @media screen and (max-width: 2000px) {
@@ -137,6 +150,12 @@ footer{
         background-color: var(--color-goldenrod);
     }
     .projects-header{
+        background-color: var(--color-goldenrod);
+    }
+    footer{
+        background-color: var(--color-goldenrod);
+    }
+    body{
         background-color: var(--color-goldenrod);
     }
   }
@@ -164,6 +183,12 @@ footer{
     .projects-header{
         background-color: var(--color-lightgreen);
     }
+    footer{
+        background-color: var(--color-lightgreen);
+    }
+    body{
+        background-color: var(--color-lightgreen);
+    }
   }
 
 
@@ -187,6 +212,12 @@ footer{
     
     }
     .projects-header{
+        background-color: var(--color-lightblue);
+    }
+    footer{
+        background-color: var(--color-lightblue);
+    }
+    body{
         background-color: var(--color-lightblue);
     }
   }
