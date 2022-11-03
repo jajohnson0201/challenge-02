@@ -2,17 +2,25 @@
  --color-grey: rgb(125, 127, 134);
  --color-lightblue: rgb(117, 211, 203);
  --color-goldenrod: goldenrod;
+ --color-lightgreen: #4dcf33;
+ --color-black:black;
 }
 
-
+body{
+    background-color: var(--color-goldenrod);
+}
 
 .header{
     background-color: var(--color-lightblue);
-    color: black;
+    border-style:solid;
+    border-color:var(--color-black);
+    color: var(--color-black);
     display:flex;
-    height: 100px;
-    position:relative;
+    height: 10%;
+    
     justify-content: space-between;
+    align-content: center;
+    
 }
 
 
@@ -20,47 +28,50 @@ nav{
     display: flex;
     justify-content: flex-end;
     background-color: var(--color-grey);
-    height:fit-content;
+    min-width: 15%;
+    border-style:solid;
+    border-color:var(--color-black);
     
     
-    
-}
-
-nav h1{
-    color:white;
 }
 
 nav a {
-    color: black;
+    color: var(--color-black);
     position: relative; 
-    
+    text-decoration: none;
+    min-width: 15%;
 }
 
 .projects-header{
     background-color: var(--color-goldenrod);
-    padding: 10px;
-    margin: 0;
-    border-color: var(--color-lightblue);
+    padding: 5%;
+    margin:0;
+    border-color: var(--color-black);
     border-style: solid;
     text-align: center;
+    
 }
 
 .card{
-    
-    width: 200px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    min-width:;
+    flex:5;
     padding: 5%;
     background-color: var(--color-grey);
     border-radius:25%;
     margin:10px;
+    border-color: var(--color-lightblue);
+    border-style: solid;
 }
 
 
 .card-parent{
     display:flex;
     flex-wrap: wrap ;
-    display: flexbox;
-    flex:2;
+    
     justify-content: space-evenly;
     padding:10%;
     background-color: var(--color-goldenrod);
@@ -72,19 +83,110 @@ nav a {
     border-style: solid;
     padding: 10%;
     border-radius:25%;
-    margin-bottom: 90%;
+    display:flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .card-p{
-    display: inline-block;
-    text-align:center;
-    margin-top:0px;
+    font-size: large;
+    border-radius:25%;
+    padding: 5%;
     background-color: whitesmoke;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    min-height: 20%;
+    border-color: var(--color-lightblue);
+    border-style: solid;
+   
 }
 
-.card img{
+.card-image{
+    display:flex;
+    flex-direction: column;
     flex:2;
-    max-width: 300px;
-    align-items: center;
-    margin-top: 0px;
+    align-items: stretch;
+    margin: 1%;
+
 }
+
+footer{
+    display: flex;
+}
+
+@media screen and (max-width: 2000px) {
+    .card {
+      width: 50%;
+      height: 40%;
+      border-color: var(--color-black);
+        border-style: solid;
+    }
+    .card-header {
+      background:var(--color-goldenrod);
+      border-color: var(--color-black);
+        border-style: solid;
+    }
+    .card-p{
+        background-color: var(--color-goldenrod);
+        border-color: var(--color-black);
+        border-style: solid;
+        
+    }
+    .header{
+        background-color: var(--color-goldenrod);
+    }
+    .projects-header{
+        background-color: var(--color-goldenrod);
+    }
+  }
+
+
+@media screen and (max-width: 1000px) {
+    .card {
+      width: 50%;
+      border-color: var(--color-black);
+        border-style: solid;
+    }
+    .card-header {
+      background: var(--color-lightgreen);
+      border-color: var(--color-black);
+        border-style: solid;
+    }
+    .card-p{
+        background-color: var(--color-lightgreen);
+        border-color: var(--color-black);
+        border-style: solid;
+    }
+    .header{
+        background-color: var(--color-lightgreen);
+    }
+    .projects-header{
+        background-color: var(--color-lightgreen);
+    }
+  }
+
+
+  @media screen and (max-width: 750px) {
+    .card {
+        width: 100%;
+        border-color: var(--color-black);
+        border-style: solid;
+    }
+    .card-header {
+        background: var(--color-lightblue);
+        border-color: var(--color-black);
+    }
+    .card-p {
+        background-color: var(--color-lightblue);
+        border-color: var(--color-black);
+        border-style: solid;
+    }
+    .header{
+        background-color: var(--color-lightblue);
+    
+    }
+    .projects-header{
+        background-color: var(--color-lightblue);
+    }
+  }
