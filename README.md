@@ -1,7 +1,7 @@
 # challenge-02
 ![project02screenshot](https://user-images.githubusercontent.com/115191212/199853204-6d0af5c0-2280-491d-8775-7ad36cbb966e.jpg)
 ## Link
-
+https://jajohnson0201.github.io/challenge-02/
 ## Description
 
 - Goal with this page was to start with nothing and take what we learned in advanced 
